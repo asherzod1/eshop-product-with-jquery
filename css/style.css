@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 86%;
+  margin: 0 auto;
+}
+
+.wrap {
+  position: relative;
+}
+
+.navbar {
+  background: #eee;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+}
+.navbar .container a {
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #333;
+}
+.navbar .container a:hover {
+  background: #333;
+  color: #fff;
+}
+.navbar .container .menu {
+  display: flex;
+}
+.navbar .container .menu .savatDiv {
+  padding: 8px 20px;
+  position: relative;
+}
+.navbar .container .menu .savatDiv .savat-counter {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  border-radius: 50%;
+  background-color: red;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cards .card {
+  margin-top: 20px;
+  width: 23%;
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+}
+.cards .card img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 5px;
+}
+.cards .card h3 {
+  margin-bottom: 5px;
+  width: 100%;
+  height: 44px;
+  overflow: hidden;
+}
+.cards .card p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.cards .card button {
+  width: 90%;
+  padding: 6px 12px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.cards .card button:hover {
+  color: red;
+  background-color: white;
+  border: 1px solid red;
+  padding: 5px 12px;
+}
+.cards .card .button-h {
+  color: red;
+  background-color: yellow;
+  border: 1px solid red;
+  padding: 5px 12px;
+  cursor: default;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.modal .modal-body {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+}
+.modal .modal-body .shopItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.modal .modal-body .shopItem img {
+  width: 20%;
+  margin-right: 10px;
+  height: 100px;
+}
+.modal .modal-body .shopItem .name {
+  width: 30%;
+}
+.modal .modal-body .shopItem input {
+  width: 4%;
+  height: 30px;
+  padding: 6px 14px;
+}
+.modal .modal-body .shopItem #remove {
+  height: 40px;
+  padding: 4px 8px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+.modal .modal-body .shopItem #remove:hover {
+  padding: 3px 7px;
+  border: 1px solid red;
+  background-color: #fff;
+  color: red;
+}
+.modal .modal-body .shopItem #qoshish {
+  height: 30px;
+  padding: 6px 14px;
+}
+.modal .modal-body .shopItem #ayirish {
+  height: 30px;
+  padding: 6px 14px;
+}
+.modal .modal-body .close {
+  margin-top: 20px;
+  padding: 4px 8px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.display-none {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

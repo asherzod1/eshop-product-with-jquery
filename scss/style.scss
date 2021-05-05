@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 86%;
+    margin: 0 auto;
+}
+.wrap{
+    position: relative;
+}
+
+.navbar{
+    background: #eee;
+    
+    .container{
+        
+        display: flex;
+        justify-content: space-between;
+        font-size: 25px;
+
+        a{
+            padding: 8px 16px;
+            text-decoration: none;
+            color: #333;
+            &:hover{
+                background: #333;
+                color: #fff;
+            }
+        }
+
+        .menu{
+            display: flex;
+            .savatDiv{
+                padding: 8px 20px;
+                position: relative;
+                .savat-counter{
+                    width: 16px;
+                    height: 16px;
+                    position: absolute;
+                    top: 0;
+                    right: 20px;
+                    border-radius: 50%;
+                    background-color: red;
+                    font-size: 15px;
+                    text-align: center;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .card{
+        margin-top: 20px;
+        width: 23%;
+        border: 1px solid #333;
+        padding: 10px;
+        text-align: center;
+        img{
+            width: 100%;
+            height: 300px;
+            margin-bottom: 5px;
+        }
+        h3{
+            margin-bottom: 5px;
+            width: 100%;
+            height: 44px;
+            overflow: hidden;
+        }
+        p{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        button{
+            width: 90%;
+            padding: 6px 12px;
+            background-color:red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            &:hover{
+                color: red;
+                background-color: white;
+                border: 1px solid red;
+                padding: 5px 12px;
+            }
+            
+        }
+        .button-h{
+            color: red;
+            background-color: yellow;
+            border:  1px solid red;
+            padding: 5px 12px;
+            cursor:default;
+        }
+    }
+}
+
+.modal{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    .modal-body{
+        width: 80%;
+        margin:20px auto;
+        padding: 20px;
+        background-color: #fff;
+        
+        .shopItem{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            img{
+                width: 20%;
+                margin-right: 10px;
+                height: 100px;
+            }
+            .name{
+                width: 30%;
+            }
+            input{
+                width: 4%;
+                height: 30px;
+                padding: 6px 14px;
+            }
+            #remove{
+                height: 40px;
+                padding: 4px 8px;
+                background-color: red;
+                color: white;
+                border: none;
+                &:hover{
+                    padding: 3px 7px;
+                    border: 1px solid red;
+                    background-color: #fff;
+                    color: red;
+                }
+            }
+            #qoshish{
+                height: 30px;
+                padding: 6px 14px;
+            }
+            #ayirish{
+                height: 30px;
+                padding: 6px 14px;
+            }
+            
+        }
+
+        .close{
+            margin-top: 20px;
+            padding: 4px 8px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+    }
+}
+
+.display-none{
+    display: none;
+}
